@@ -1,4 +1,11 @@
 .card {
   border-radius: 0.5rem;
   background: #e1d8ff;
+  width: 15.625rem;
+  height: 15.625rem;
+}
+
+.word {
+  font-size: 2.5rem;
+  font-weight: bold;
 }

@@ -1,14 +1,14 @@
+import { PropsWithChildren } from 'react'
 import style from './style.module.css'
 
-type Props = {
-  text: string
-  onClick: () => void
+type ButtonProps = {
+  onClick?: () => void
 }
 
-const Button = ({ text, onClick }: Props) => {
+const Button = ({ children, onClick }: PropsWithChildren<ButtonProps>) => {
   return (
     <button onClick={onClick} className={style.button}>
-      {text}
+      {children}
     </button>
   )
 }
